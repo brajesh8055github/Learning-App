@@ -1,38 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 .App {
+  font-family: 'Poppins', sans-serif;
+}
+::selection {
+  color: #fff;
+  background: rgb(230, 22, 84);
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  color: rgb(210, 67, 138);
+}
+
+
+.left a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+}
+
+.early {
+  background: #5d2ba4;
+  color: #fff;
+  font-size: 15px;
   text-align: center;
 }
+/*------------------------------------------------------ Chat------------------------------- */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat i{
+  /* border: 1px solid rgb(233, 233, 233); */
+  box-shadow: 0 0 20px 0 rgba(73, 255, 158, 0.829);
+  background: #ffffff;
+  bottom: 0;
+  right: 0;
+  padding:0 10px ;
+  margin: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 40px;
+  color: rgb(1, 185, 44);
+  position: fixed;
+  cursor: pointer;
+  transition: 0.5s all;
 }
+.chat i:hover{
+  background: rgb(1, 185, 44);
+  color: #fff;
+  box-shadow: none;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+/*------------------------------------------------------End Chat------------------------------- */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  max-width: 1300px;
+  padding: 0 80px;
+  background: #fffafa;
+  color: #000000;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enroll {
+  background: #5d2ba4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.login {
+  color: #8d8d8d;
+  border: 1px solid lightgrey;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.join {
+  background: #5814b8;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-apply {
+  background: #f02e2e;
+  color: #fff;
+  border: none;
+  padding: 10px 70px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*------------------------------ Hero-------------------------------- */
+.hero {
+  max-width: 1100px;
+  margin: 60px auto;
+  
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-img {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px 0 20px 20px;
+  object-fit: cover;
+}
+
+.f-row {
+  max-width: 500px;
+}
+
+.border {
+  max-width: 500px;
+  margin: 50px 0;
+  padding: 15px 10px;
+  background: linear-gradient(143deg, rgba(255, 11, 11, 1) 16%, rgba(255, 9, 221, 1) 67%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.border h4 {
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero .enroll {
+  margin: 10px 0;
+  background: #4e1193;
+  font-size: 20px;
+}
+
+/*----------------------------End Hero-----------------------------*/
+
+
+/*----------------------------Overview-----------------------------*/
+.overview {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+
+.col-f {
+  max-width: 1100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.col {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.over-card {
+  max-width: 400px;
+  color: #181818;
+  border-radius: 5px;
+  padding: 48px 32px;
+  margin: 10px;
+}
+
+.head {
+  margin-bottom: 11.200px;
+}
+
+.high {
+  background: rgb(242, 235, 252);
+  border: 1px solid rgb(198, 185, 255);
+}
+
+.focus {
+  background: rgb(234, 255, 238);
+  border: 1px solid rgb(180, 255, 211);
+}
+
+.doubt {
+  background: rgb(255, 240, 248);
+  border: 1px solid rgb(255, 163, 202);
+}
+
+.problem {
+  background: rgb(236, 238, 255);
+  border: 1px solid rgb(176, 184, 255);
+}
+
+.community {
+  background: rgb(237, 247, 255);
+  border: 1px solid rgb(166, 230, 255);
+}
+
+.placement {
+  background: rgb(255, 247, 212);
+  border: 1px solid rgb(255, 233, 160);
+}
+
+/*----------------------------End Overview-----------------------------*/
+
+/*----------------------------Testinomial-----------------------------*/
+.testinomial {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.testinomial div {
+  position: relative;
+}
+
+.test {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.top {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.top h1,
+p {
+  margin: 0;
+}
+
+/*----------------------Student Feedback------------------------- */
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.student i {
+  font-size: 25px;
+}
+
+.student i:hover {
+  background: none;
+  color: none;
+}
+
+/*----------------------------End Student Feedback-----------------------------*/
+
+
+/*----------------------------Contact-----------------------------*/
+.contact{
+    max-width: 1100px;
+    margin: 60px auto;
+}
+/*----------------------------curriculum-----------------------------*/
+
+.curriculum {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.curriculum div {
+  position: relative;
+}
+
+.struct {
+  border: 1px solid rgb(176, 255, 250);
+  background: #67ebefaa;
+  padding: 2px 10px;
+  margin: 10px;
+}
+
+.l-card {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  /* padding: 10px; */
+}
+
+.dsa-card {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.cut {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.card-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border: none;
+  background: #035a75;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.c-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-left {
+  width: 700px;
+  margin: 0 10px;
+}
+/*----------------------------Founder-----------------------------*/
+/*----------------------------Certificate-----------------------------*/
+.certificate{
+  background: radial-gradient(50% 50% at 100% 0,#000 0 5%,#20007a 6% 15%,#000 16% 25%,#20007a 26% 35%,#000 36% 45%,#20007a 46% 55%,#000 56% 65%,#20007a 66% 75%,#000 76% 85%,#20007a 86% 95%,transparent 96%),radial-gradient(50% 50% at 0 100%,#000 0 5%,#20007a 6% 15%,#000 16% 25%,#20007a 26% 35%,#000 36% 45%,#20007a 46% 55%,#000 56% 65%,#20007a 66% 75%,#000 76% 85%,#20007a 86% 95%,transparent 96%),radial-gradient(50% 50%,#000 0 5%,#20007a 6% 15%,#000 16% 25%,#20007a 26% 35%,#000 36% 45%,#20007a 46% 55%,#000 56% 65%,#20007a 66% 75%,#000 76% 85%,#20007a 86% 95%,transparent 96%),radial-gradient(50% 50%,#000 0 5%,#20007a 6% 15%,#000 16% 25%,#20007a 26% 35%,#000 36% 45%,#20007a 46% 55%,#000 56% 65%,#20007a 66% 75%,#000 76% 85%,#20007a 86% 95%,transparent 96%) 24px 24px;
+    background-color: #000;
+    background-size: 48px 48px;
+    padding: 5rem 0;
+    /* position: relative; */
+    color: #fff;
+}
+.certi-body{
+  max-width: 1100px;
+  /* border: 2px solid red; */
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-img{
+ width: 100%;
+}
+.batch{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 20px;
+  background-color: #fce7b5;
+  color: #753b18;
+  border-radius: 5px;
+  padding: 5px;
+}
+.batch i{
+  font-size: 20px;
+  padding-right:10px ;
+}
+.batch h4{
+  margin: 0;
+}
+/*----------------------------End Certificate-----------------------------*/
+
+/*----------------------------Founder-----------------------------*/
+
+.founder {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.f-col {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.f-row {
+  max-width: 500px;
+}
+
+.f-img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+}
+
+.group {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px auto;
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.group a{
+  font-size: 20px;
+}
+
+/*---------------------------------------------------- Review------------------------------------------------------------------ */
+
+/*-------------------------------- This is for scroll */
+
+/* .col-review{
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+.cert::-webkit-scrollbar {
+  display: none;
+} */
+
+
+.review {
+  /* width: 400px; */
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 20px 0 #9c98987b;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: rgb(100, 100, 100);
+}
+.star{
+  color: red;
+  padding: 10px 0 ;
+}
+
+.footer {
+  max-width: 1300px;
+  background: #12114f;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer2 {
+  max-width: 1300px;
+  background: #12114f;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-col {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-row {
+  text-align: start;
+}
+
+/* .bi-instagram{
+  border: 1px solid red;
+  padding: 0;
+  border-radius: 50%;
+  background: #000;
+} */
+.bi-linkedin:hover {
+  color: blue;
+  background: #fff;
+}
+
+.bi-instagram:hover {
+  color: rgb(224, 14, 144);
+  background: #fff;
+}
+
+.bi-telegram:hover {
+  color: dodgerblue;
+  background: #fff;
+}
+
+.bi-youtube:hover {
+  color: red;
+  background: #fff;
+}
+
+.footer-row i {
+  font-size: 30px;
+  padding: 0 10px;
+  color: #e1e1e1;
+  cursor: pointer;
+  transition: 0.5s linear;
+
+}
+
+.footer-row p {
+  font-size: 15px;
+  color: #e1e1e1;
+}
+
+.footer-row a {
+  text-decoration: none;
+  color: #e1e1e1;
+
+}
+
+.footer-row a:hover {
+  color: #f02e2e;
+  border-bottom: 2px solid #f02e2e;
+  transition: 0.9ms linear;
+}
+
+.footer-row,
+.icon a:hover {
+  border-bottom: none;
+}
+
+.copy {
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.opps {
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: center;
+
+}
+
+/*-------------------------------About ------------------------------*/
+.about {
+  max-width: 1300px;
+  background: #000;
+
+}
+
+.about-hero {
+  max-width: 1100px;
+  margin: 20px auto;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.about-hero .footer-apply {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* ------------------------------ End About--------------------- */
+/* ------------------------------ FAQS--------------------- */
+
+.faqs {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 20px auto;
+}
+
+.faqs button {
+  width: 100%;
+  text-align: start;
+}
+
+.faqs .f-row p {
+  border: 1px solid red;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background: rgb(237, 247, 255);
+  border: 1px solid rgb(166, 230, 255);
+  border-radius: 10px;
+}
+
+.collapse div {
+  margin-bottom: 10px;
+}
+
+.btn-faqs {
+  border: none;
+  background: none;
+}
+
+/* ------------------------------ End FAQS--------------------- */
+
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.send-msg {
+  padding: 15px 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #000;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.condition {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+/*---------------------------------------------------- Media Querry--------------------------------------------- */
+
+@media (max-width:1020px) {
+  .hero-flex {
+    display: block;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .contact{
+    margin: 10px;
+  }
+  .f-col {
+    display: block;
+    align-items: center;
+  }
+
+  .f-row {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+
+  }
+
+  .condition {
+    margin: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .border {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .f-img {
+    display: none;
+  }
+
+  .about-hero {
+    margin: 10px;
+  }
+}
+
+@media (max-width:740px) {
+  .group {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .group a{
+    font-size: 16px;
+  }
+  .group img{
+    display: none;
+  }
+ 
+  .footer-col {
+    display: block;
+  }
+  .certi-body{
+    display: block;
+  }
+  .footer-row {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .footer-row a {
+    text-decoration: none;
+    color: #e1e1e1;
+  }
+}
+
+@media (max-width:720px) {
+  .col {
+    display: block;
+  }
+
+  .faqs {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .col-f {
+    display: block;
+  }
+
+  .over-card {
+    max-width: 100%;
+  }
+
+  .c-2 {
+    display: block;
+    margin: 10px;
+
+  }
+
+  .l-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .c-left {
+    margin: 0;
+    width: 100%;
+  }
+  .chat i{
+    font-size: 24px;
+    padding:0 6px;
   }
 }
