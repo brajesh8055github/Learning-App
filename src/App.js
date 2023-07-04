@@ -4,8 +4,8 @@ import Home from './pages/Home'
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/About'
 import Contact from './pages/Contact'
-import css from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import js from '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 import TandC from './pages/TandC';
 import Privacy from './pages/Privacy';
 import Refund from './pages/Refund';
